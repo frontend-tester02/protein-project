@@ -18,7 +18,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family:"Fira Sans" "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
@@ -30,19 +30,343 @@ img {
   height: auto;
 }
 
-/* CONTAINER */
 
-.container {
+
+
+/* HEADER-SECTION */
+
+.header-background {
+  padding: 10px!important;
   width: 100%;
-  max-width: 1200;
-  padding-left: 50px;
-  padding-right: 50px;
+  height: auto;
+  background-image: url(../img/header-girl.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+.navbar {
+  padding: 8px 16px!important;
+  background-color: #fff!important;
+
+
+
+
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-family:"Fira sans";
+  font-weight: bold;
+  color:#669933!important;
+}
+
+.navbar-info-item {
+  color:#669933!important;
+  font-size: 16px;
+  font-family:"Fira Sans";
+  font-weight: bold;
+}
+
+/* NAVBAR-ITEMS-ICON */
+
+
+.navbar-items-icon-link {
+  padding: 8px 8px;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  border: 1px solid #669933;
+  color:#669933!important;
+}
+
+.navbar-items-icon-link:hover {
+  background-color: #669933!important;
+  color: #fff!important;
+}
+
+.usa-flag-icon {
+  background-image: url(../img/usa-flag.jpg);
+}
+
+.usa-flag {
+  background-size: contain;
+  background-position:50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 1.33em;
+  height: 1em;
+
+}
+
+.bi-person {
+  color: #669933!important;
+}
+
+.user-text {
+  font-size: 16px;
+  color:000!important;
+  font-family: "Fira Sans";
+  font-weight: 500;
+
+}
+
+.user-text:hover {
+  background-color:#669933!important;
+  color:#fff!important;
+}
+
+.numbers-order {
+  color: #669933!important;
+  padding: 3px 5px;
+  border: 1px solid #669933;
+
+
+}
+
+.numbers-order:hover {
+  background-color: #669933!important;
+  color: #fff!important;
+}
+
+.bi-cart {
+  color: #669933!important;
+}
+
+/* HERO SECTION */
+.hero-section {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 150px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* MAIN-CONTENT */
+.hero-section-title {
+  font-size: 72px;
+  font-family: "Fira Sans";
+}
+
+.hero-section-title-circle {
+  color: #669933!important;
+
+}
+
+.hero-section-text {
+  padding-bottom: 100px;
+  font-size: 36px;
+  font-family: "Fira Sans";
+}
+
+
+.location-text {
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-family: "Fira Sans";
+
+}
+
+/* MAIN-CONTENTS */
 
 .main-content {
-  flex-grow: 1;
+  padding: 104px 0;
+}
+
+.main-content-container {
+  padding: 48px 0 0;
+}
+
+.main-content-link-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content-link-discount {
+  position: relative;
+  top: 0;
+  border: 1px solid #ed1c24;
+  display: inline-block;
+  text-align: center;
+  z-index: 1;
+}
+.discount-number {
+  padding: 0.3rem 0.8rem;
+  display: block;
+  font-weight: 500;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: black;
+
+}
+.discount-text {
+  padding: 0.3rem 0.8rem;
+  background-color: #ed1c24;
+  display: block;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.main-content-link-item img {
+  width: 403px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  right: 0;
+  z-index: 0;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  min-width: calc(100% + 2px);
+}
+
+.square-75::after {
+  content:"";
+  display: block;
+  padding-bottom: 75%;
+
+}
+
+.main-content-item-info {
+  margin-top: -80px;
+}
+
+.main-content-info-title {
+  font-size: 24px;
+  font-family: "Fira Sans";
+  color:#212529;
+  font-weight: 500!important;
+}
+
+/* .prize-holder {
+  display: flex;
+  justify-content: left;
+  align-items:center;
+} */
+
+.prize-info {
+  padding-top: 3px;
+  font-size: 18px;
+  font-family: "Fira Sans";
+}
+
+.prize-old {
+  color:#d3d3d3;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+
+.new-prize {
+  color: #669933!important;
+}
+
+
+.content-prize-link {
+  padding: 0 15px;
+}
+
+.btn-link {
+  padding: 3px 0;
+  font-size: 16px;
+  font-family: "Fira Sans";
+  color: #669933!important;
+}
+
+
+
+/* PAGINATION */
+
+.page-item {
+  background-color: #fafafa!important;
+}
+
+.page-item:hover {
+  background-color: #eeefef!important;
+}
+
+.page-link {
+  color: #669933!important;
+
+}
+
+
+
+/* ABOUT DELIVERY */
+
+.bi-arrow-down-left-circle {
+  font-size: 72px!important;
+}
+
+.delivery-text {
+  font-size: 24px;
+  font-family: "Fira Sans";
+}
+
+/* MOTIVATION SECTION */
+
+.motivation-title {
+  font-size: 50px;
+  font-family: "Fira Sans";
+  font-weight: 500;
+}
+
+.motivation-text {
+  font-size: 20px;
+  font-family: "Fira Sans";
+  font-weight: 300;
+
+}
+
+/* JOIN SECTION */
+
+.join-section-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Fira Sans";
+  margin-bottom: 8px;
+
+}
+
+.join-section-text {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Fira Sans";
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.join-label {
+  font-size: 16px;
+  font-family: "Fira Sans";
+  font-weight: 500;
+}
+
+.join-input {
+  border: 1px solid black;
+  border-radius:0;
+}
+
+.join-btn {
+  background-color: #669933!important;
+  border: 1px solid #669933;
+  border-radius:0;
+}
+
+/* CTA */
+
+.cta-icon {
+  color: #669933!important;
+}
+
+.cta-email-link {
+  color: #669933!important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cta-email-link:hover {
+  text-decoration: underline;
 }
